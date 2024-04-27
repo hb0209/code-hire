@@ -1,0 +1,84 @@
+.headerWrap {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 106, 0.8449973739495799) 48%,
+    rgba(184, 43, 43, 1) 100%
+  );
+  color: white;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  .rightHeader {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    .companyLogo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      > img {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+      }
+    }
+  }
+  .leftHeader {
+    display: flex;
+    gap: 60px;
+  }
+}
+
+.industriesFilter,
+.aboutUs,
+.contactUs {
+  position: relative;
+  cursor: pointer;
+}
+.industriesFilter::after,
+.aboutUs::after,
+.contactUs::after {
+  content: ""; /* Required for the pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 10px;
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the line */
+  background-color: transparent; /* Initially transparent */
+  transition: width 0.5s ease, background-color 0.5s ease; /* Transition width and background-color */
+}
+
+/* Hover state */
+.industriesFilter:hover::after,
+.aboutUs:hover::after,
+.contactUs:hover::after {
+  width: 100%;
+  height: 5px; /* Expand width on hover */
+  background-color: white; /* Change color on hover */
+}
+.logIn,
+.signUp {
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid goldenrod; /* Green border */
+  background-color: #933a3a; /* White background */
+  color: white; /* Green text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logIn:hover,
+.signUp:hover {
+  transform: scale(1.05); /* Scale up by 5% on hover */
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Green shadow on hover */
+}
