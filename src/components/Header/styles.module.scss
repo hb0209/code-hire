@@ -16,7 +16,7 @@
   padding: 10px 0;
 
   .rightHeader {
-    gap: 60px;
+    gap: 26px;
     display: flex;
     align-items: center;
     .companyLogo {
@@ -30,9 +30,24 @@
       }
     }
   }
+  .headerSearch {
+    margin-left: -306px;
+    > input {
+      height: 10px;
+      width: 258px;
+      background: beige;
+      border: 2px solid;
+      border-radius: 15px;
+      border: 2px solid #ccc;
+      border-radius: 20px;
+      padding: 10px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 5.1);
+      color: black;
+    }
+  }
   .leftHeader {
     display: flex;
-    gap: 60px;
+    gap: 26px;
   }
 }
 

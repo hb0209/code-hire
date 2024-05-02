@@ -10,11 +10,14 @@ export default function Header() {
           <div className={styles.rightHeader}>
             <div className={styles.companyLogo}>
               <img src={codingHire}></img>
-              <span>Code Hire</span>
+              <span>Catch My Contact</span>
             </div>
-            <div className={styles.industriesFilter}>Industries</div>
+            <div className={styles.industriesFilter}>Field</div>
             <div className={styles.aboutUs}>About Us</div>
             <div className={styles.contactUs}>Contact Us</div>
+          </div>
+          <div className={styles.headerSearch}>
+            <input placeholder="Search Here" type="text"></input>
           </div>
           <div className={styles.leftHeader}>
             <div className={styles.logIn}>Log In</div>
